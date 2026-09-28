@@ -134,24 +134,10 @@
                 <p class="text-gray-500 text-base mt-3 max-w-xl mx-auto">Explore custom decor for weddings, birthdays, graduations, Quinceañeras, and special events.</p>
             </div>
 
-            <!-- Filter Buttons -->
-            <div class="flex justify-center gap-2 sm:gap-4 mb-12 flex-wrap" id="category-filters">
-                <button class="cat-filter active px-6 py-2.5 rounded-full text-xs font-semibold transition-all bg-bloom-500 text-white shadow-md shadow-bloom-500/20" data-category="all">
-                    All Products
-                </button>
-                <button class="cat-filter px-6 py-2.5 rounded-full text-xs font-semibold transition-all bg-white text-gray-600 border border-bloom-200 hover:border-bloom-500" data-category="flowers">
-                    Fresh Flowers
-                </button>
-                <button class="cat-filter px-6 py-2.5 rounded-full text-xs font-semibold transition-all bg-white text-gray-600 border border-bloom-200 hover:border-bloom-500" data-category="bears">
-                    Teddy Bears
-                </button>
-                <button class="cat-filter px-6 py-2.5 rounded-full text-xs font-semibold transition-all bg-white text-gray-600 border border-bloom-200 hover:border-bloom-500" data-category="bundles">
-                    Luxury Bundles
-                </button>
-            </div>
+            
 
             <!-- Decor Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="decorations-grid">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="decorations-grid">
                 <!-- Populated dynamically via JS -->
             </div>
         </section>
@@ -179,7 +165,6 @@
 
             <!-- Free Shipping Progress -->
             <div class="p-4 bg-bloom-100/50 border-b border-gray-100 text-xs">
-                <p id="shipping-progress-text" class="text-gray-600 mb-1.5 font-medium">Add $50.00 more for Free Same-Day Shipping!</p>
                 <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                     <div id="shipping-bar" class="h-full bg-bloom-500 transition-all duration-500" style="width: 30%"></div>
                 </div>
@@ -245,60 +230,45 @@
     </div>
 
     <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 pb-12 border-b border-gray-800">
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
                     <div class="w-8 h-8 rounded-full bg-bloom-500 flex items-center justify-center text-white text-sm">
                         <img src="img/favicon.ico" alt="mariluz flowers logo">
                     </div>
-                    <span class="font-serif text-xl font-bold tracking-tight">Bloom & Bear</span>
+                    <span class="font-serif text-xl font-bold tracking-tight">Mariluz Flowers</span>
                 </div>
-                <p class="text-gray-400 text-xs leading-relaxed">Providence's floral design studio, decorations, and plush gift boutique.</p>
+                <p class="text-gray-400 text-xs leading-relaxed max-w-sm">Providence's boutique floral design studio, custom party decorator, and gift shop since 2008.</p>
             </div>
-
-            <!-- <div>
-                <h4 class="font-serif text-lg font-bold mb-4 text-bloom-200">Customer Care</h4>
-                <ul class="space-y-2 text-xs text-gray-400">
-                    <li><a href="#" class="hover:text-white transition-colors">Same-Day Delivery</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Flower Care Guide</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Plush Hypoallergenic Info</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Track Your Order</a></li>
-                </ul>
-            </div> -->
 
             <div>
-                <h4 class="font-serif text-lg font-bold mb-4 text-bloom-200">Contact Us</h4>
-                <ul class="space-y-2 text-xs text-gray-400">
-                    <li><a target="_blank" aria-label="50 location" href="https://www.google.com/maps/place/Luz+Flower+Shop+%2F+Mariluz+Party+Store/@41.816972,-71.443046,19z/data=!4m6!3m5!1s0x89e44590689c7245:0x16b77cd7745c9103!8m2!3d41.816972!4d-71.443046!16s%2Fg%2F1tm8f_jg?hl=es&entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D">
-                       <i class="fa-solid fa-location-dot mr-2 text-bloom-500"></i> 50 Olneyville Square Providence, RI 02909
-                    </a></li>
-                    
-                    <li><i class="fa-solid fa-phone mr-2 text-bloom-500"></i> (401) 490-0987</li>
-
-                    <li><a target="_blank" aria-label="148 location" href="https://www.google.com/maps/place/Mariluz+flowers+and+party+store/@41.8116459,-71.4498036,19z/data=!4m14!1m7!3m6!1s0x89e44590689c7245:0x16b77cd7745c9103!2sLuz+Flower+Shop+%2F+Mariluz+Party+Store!8m2!3d41.816972!4d-71.443046!16s%2Fg%2F1tm8f_jg!3m5!1s0x89e445d3ef99d48b:0xcc266418ea446025!8m2!3d41.8116891!4d-71.4496398!16s%2Fg%2F11ngtk45c9?hl=es&entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D">
-                       <i class="fa-solid fa-location-dot mr-2 text-bloom-500"></i> 148 Webster Avenue Providence, RI 02909
-                    </a></li>
-                    <li><i class="fa-solid fa-phone mr-2 text-bloom-500"></i> (401) 865-6177</li>
-                    <li><i class="fa-solid fa-envelope mr-2 text-bloom-500"></i> hello@bloomandbear.com</li>
+                <h4 class="font-serif text-lg font-bold mb-4 text-bloom-200">Contact & Locations</h4>
+                <ul class="space-y-3 text-xs text-gray-400">
+                    <li>
+                        <a target="_blank" aria-label="50 Olneyville Square location" href="https://www.google.com/maps/place/Luz+Flower+Shop+%2F+Mariluz+Party+Store/@41.816972,-71.443046,19z" class="hover:text-white transition-colors flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-bloom-500"></i> 50 Olneyville Square, Providence, RI 02909
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-bloom-500"></i> (401) 490-0987
+                    </li>
+                    <li>
+                        <a target="_blank" aria-label="148 Webster Avenue location" href="https://www.google.com/maps/place/Mariluz+flowers+and+party+store/@41.8116459,-71.4498036,19z" class="hover:text-white transition-colors flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-bloom-500"></i> 148 Webster Avenue, Providence, RI 02909
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-bloom-500"></i> (401) 865-6177
+                    </li>
                 </ul>
             </div>
-
-            <!-- <div>
-                <h4 class="font-serif text-lg font-bold mb-4 text-bloom-200">Boutique Newsletter</h4>
-                <p class="text-xs text-gray-400 mb-3">Subscribe for $15 off your first flower & bear bundle.</p>
-                <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');" class="flex gap-2">
-                    <input type="email" required placeholder="Your email address" class="bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-bloom-500 flex-1">
-                    <button type="submit" class="bg-bloom-500 px-3 py-2 rounded-lg text-xs font-bold hover:bg-bloom-600">Join</button>
-                </form>
-            </div> -->
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
             <p>&copy; 2026 Mariluz Flowers Inc. All rights reserved.</p>
             <div class="flex gap-4">
-                <a target="_blank" href="https://www.instagram.com/flowers_2024.1/" class="hover:text-gray-300"><i class="fa-brands fa-instagram text-base"></i></a>
-                <!-- <a href="#" class="hover:text-gray-300"><i class="fa-brands fa-pinterest text-base"></i></a>-->
-                <a target="_blank" href="https://www.facebook.com/people/Mariluz-Flowers-and-Party-Store/100068434938916/#" class="hover:text-gray-300"><i class="fa-brands fa-facebook text-base"></i></a> 
+                <a target="_blank" aria-label="Instagram" href="https://www.instagram.com/flowers_2024.1/" class="hover:text-gray-300 transition-colors"><i class="fa-brands fa-instagram text-base"></i></a>
+                <a target="_blank" aria-label="Facebook" href="https://www.facebook.com/people/Mariluz-Flowers-and-Party-Store/100068434938916/#" class="hover:text-gray-300 transition-colors"><i class="fa-brands fa-facebook text-base"></i></a> 
             </div>
         </div>
     </footer>

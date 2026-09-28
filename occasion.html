@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariluz Flowers | Boutique Floral & Plush Gift Shop</title>
 
-    <meta name="description" content="Mariluz Flowers & Party Rentals in Providence, RI. decorations, balloons custom party, party supplies, and local delivery.">
+    <meta name="description" content="Mariluz Flowers & Party Rentals in Providence, RI. Beautiful floral arrangements for all occasions, custom balloons, party supplies, and local delivery.">
     <meta name="geo.region" content="US-RI">
     <meta name="geo.placename" content="Providence">
     
@@ -84,8 +84,8 @@
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
                 <a href="index.html" class="hover:text-bloom-500 transition-colors">Home</a>
                 <a href="flowers.html" class="hover:text-bloom-500 transition-colors">Floral</a>
-
                 <a href="decorations.html" class="hover:text-bloom-500 transition-colors">Decorations</a>
+
                 <a href="bundle.html" class="hover:text-bloom-500 transition-colors flex items-center gap-1.5 text-bloom-500 font-semibold">
                     <i class="fa-solid fa-wand-magic-sparkles"></i> Custom Bundle
                 </a>
@@ -117,31 +117,60 @@
             <a href="index.html" class="mobile-link py-2 border-b border-gray-100">Home</a>
             <a href="flowers.html" class="mobile-link py-2 border-b border-gray-100">Floral Arrangements</a>
             <a href="decorations.html" class="mobile-link py-2 border-b border-gray-100">Decorations</a>
-
             <a href="bundle.html" class="mobile-link py-2 border-b border-gray-100 text-bloom-500 font-semibold"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Custom Gift Box Builder</a>
             <a href="occasion.html" class="mobile-link py-2 border-b border-gray-100">Occasions Guide</a>
         </div>
     </header>
 
     <main class="pt-20">
+        
 
-        <section id="decorations" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+
+
+         <section id="occasions" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-xs font-semibold uppercase tracking-widest text-bloom-sage">Curated Catalog</span>
-                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-gray-900 mt-1">Party decorations</h2>
-                <p class="text-gray-500 text-base mt-3 max-w-xl mx-auto">Explore custom decor for weddings, birthdays, graduations, Quinceañeras, and special events.</p>
+                <span class="text-xs font-semibold uppercase tracking-widest text-bloom-sage">Shop by Occasion</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-gray-900 mt-1">Perfect Gifts for Every Moment</h2>
             </div>
 
-            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div onclick="filterByTag('Romantic')" class="cursor-pointer group glass-card rounded-2xl overflow-hidden p-4 text-center hover:shadow-lg transition-all border border-bloom-500/10">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-bloom-500/10 text-bloom-500 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Romance & Anniversary</h3>
+                    <p class="text-xs text-gray-500 mt-1">Deep red roses & velvet bears</p>
+                </div>
 
-            <!-- Decor Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="decorations-grid">
-                <!-- Populated dynamically via JS -->
+                <div onclick="filterByTag('Birthday')" class="cursor-pointer group glass-card rounded-2xl overflow-hidden p-4 text-center hover:shadow-lg transition-all border border-bloom-500/10">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-bloom-gold/10 text-bloom-gold flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Birthdays</h3>
+                    <p class="text-xs text-gray-500 mt-1">Vibrant lilies & party sets</p>
+                </div>
+
+                <div onclick="filterByTag('Get Well')" class="cursor-pointer group glass-card rounded-2xl overflow-hidden p-4 text-center hover:shadow-lg transition-all border border-bloom-500/10">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-bloom-sage/10 text-bloom-sage flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Get Well Soon</h3>
+                    <p class="text-xs text-gray-500 mt-1">Comforting plush & soft pastel blooms</p>
+                </div>
+
+                <div onclick="filterByTag('Congratulations')" class="cursor-pointer group glass-card rounded-2xl overflow-hidden p-4 text-center hover:shadow-lg transition-all border border-bloom-500/10">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-bloom-bear/10 text-bloom-bear flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Congratulations</h3>
+                    <p class="text-xs text-gray-500 mt-1">Luxurious floral baskets</p>
+                </div>
             </div>
         </section>
 
 
-        
+      
     </main>
 
     <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0">
@@ -182,15 +211,12 @@
                     </div>
                     <div class="flex justify-between">
                         <span>Estimated Shipping</span>
-                        <span class="font-semibold text-gray-900" id="cart-shipping">$12.00</span>
                     </div>
                     <div class="flex justify-between text-base font-serif font-bold text-gray-900 border-t border-gray-200 pt-2">
                         <span>Total</span>
                         <span class="text-bloom-600 text-xl" id="cart-total">$0.00</span>
                     </div>
                 </div>
-
-                
             </div>
 
         </div>
@@ -209,7 +235,7 @@
                     <span id="modal-category" class="text-[10px] font-bold uppercase tracking-wider text-bloom-sage px-2 py-1 rounded bg-bloom-sagelight">Category</span>
                     <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-gray-900 mt-2">Product Name</h2>
                     <p id="modal-price" class="text-xl font-serif font-bold text-bloom-600 mt-1">$0.00</p>
-                    <p id="modal-desc" class="text-gray-500 text-sm mt-4 leading-relaxed">Description </p>
+                    <p id="modal-desc" class="text-gray-500 text-sm mt-4 leading-relaxed">Description goes here...</p>
                     
                     <!-- Custom Greeting Note Input -->
                     <div class="mt-4 pt-4 border-t border-gray-100">
@@ -226,7 +252,7 @@
     </div>
 
     <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 pb-12 border-b border-gray-800">
+       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 pb-12 border-b border-gray-800">
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
                     <div class="w-8 h-8 rounded-full bg-bloom-500 flex items-center justify-center text-white text-sm">
